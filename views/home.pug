@@ -6,6 +6,8 @@ html(lang="en")
         title Document
     body
         p Bienvenido #{datos}
-        form
-            input(type='text')
-            input(type='button' value='Buscar')
+        p
+            input#filmName(type='text')
+            input#searchFilm(type='button')
+
+        script(src="../public/js/logica.js")

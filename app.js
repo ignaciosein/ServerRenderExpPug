@@ -38,12 +38,16 @@ res.status(403).send(`lo siento no funciona ${req.url}`);
 }
 
  
+
 }
 
- app.use(isAdmin)
+/*  app.use(isAdmin) */
  
 app.use("/",router) 
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
+
+
+

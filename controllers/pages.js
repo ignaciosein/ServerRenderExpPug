@@ -1,3 +1,5 @@
+ 
+ 
  const routes = {
   home: (req, res) => {
     let datos = { nombre: "alex" };
@@ -9,10 +11,9 @@
   },
   products: async (req, res) => {
     let id = req.query.id || '';
-        let data = await prod.getProducts(`https://fakestoreapi.com/products/${id}`);
+        let data = await prod.getProducts(`http://www.omdbapi.com/?t=${pelicula}&apikey=d33a722d`);
         res.status(200).render('home', {data})
         }
   
 };
 module.exports = routes;
-
