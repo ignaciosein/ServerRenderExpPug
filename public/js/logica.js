@@ -1,8 +1,10 @@
+ 
+document.getElementById("searchFilm").addEventListener("submit", function(event){
 
-document.getElementById("searchFilm").addEventListener("click", function(){
+    event.preventDefault()
 
     let nameFilm = document.getElementById("filmName").value
-    alert(" funciona")
+    alert(nameFilm)
 
 
     fetch(`http://www.omdbapi.com/?t=${nameFilm}&apikey=d33a722d`)

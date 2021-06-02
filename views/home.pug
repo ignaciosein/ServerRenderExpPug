@@ -5,9 +5,8 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document
     body
-        p Bienvenido #{datos}
-        p
-            input#filmName(type='text')
-            input#searchFilm(type='button')
+        p Bienvenissdo #{datos}
 
-        script(src="../public/js/logica.js")
+        form(action='/film' method='post')
+            input#filmName(type='text' name='nombrePelicula')
+            button#searchFilm(type='submit')  
