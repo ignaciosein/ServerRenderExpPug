@@ -4,9 +4,9 @@ const movies = {
     getMovies: async (url) => {
         let response = await fetch(`http://www.omdbapi.com/?apikey=${APIKey}&`);
         let prod = await response.json();
-      
+ 
         console.log(prod);
-        return prod;
-         
+        return prod; 
+ 
     }
 }
