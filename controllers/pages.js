@@ -1,6 +1,7 @@
 const fetch = require("node-fetch");
 const bodyParser = require("body-parser");
  
+ 
 const routes = {
     home: (req, res) => {
         let datos = { nombre: "alex" };
@@ -25,3 +26,4 @@ const routes = {
 };
 
 module.exports = routes;
+ 

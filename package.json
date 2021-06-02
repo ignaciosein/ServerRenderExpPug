@@ -11,14 +11,18 @@
     "type": "git",
     "url": "git+https://github.com/ignaciosein/ServerRenderExpPug.git"
   },
+ 
   "author": "Diego",
+ 
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ignaciosein/ServerRenderExpPug/issues"
   },
   "homepage": "https://github.com/ignaciosein/ServerRenderExpPug#readme",
   "dependencies": {
+ 
     "dotenv": "^10.0.0",
+ 
     "express": "^4.17.1",
     "node-fetch": "^2.6.1",
     "pug": "^3.0.2"
