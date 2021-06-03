@@ -1,9 +1,8 @@
 const express = require("express");
 const app = express();
-const bodyParser = require("body-parser");
 const router = require("./controllers/index");
+const routerApi = require('./controllers/routerApi');
 
-app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use("/public", express.static("public"));
  
@@ -17,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use("/", router);
-// app.use('/api', routerApi);
+app.use('/api', routerApi);
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);

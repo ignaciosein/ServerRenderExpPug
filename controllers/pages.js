@@ -9,9 +9,10 @@ const routes = {
         let data = await pelis.getMovie(`http://www.omdbapi.com/?t=${tituloDePelicula}&apikey=d33a722d`);
         res.status(200).render('film', data);
     },
-    postFilm: (req, res) => {
-    let nombreDePelicula = req.body.nombrePelicula;
-    res.redirect(`/film/${nombreDePelicula}`)
+    postFilm: async (req, res) => {
+        let nombreDePelicula = req.body.peliculaBuscar;
+        // console.log(nombreDePelicula)
+        res.redirect(`/film/${nombreDePelicula}`)
     } 
 };
 
