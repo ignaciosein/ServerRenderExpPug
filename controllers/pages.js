@@ -11,7 +11,6 @@ const routes = {
     },
     postFilm: (req, res) => {
     let nombreDePelicula = req.body.nombrePelicula;
-    console.log(nombreDePelicula)
     res.redirect(`/film/${nombreDePelicula}`)
     } 
 };

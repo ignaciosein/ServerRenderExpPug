@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const pelis = require('./pelis');
+const pagesApi = require('./pagesApi');
 
 router.get('/film/:title', pages.getPeli)
 router.post('/film/', pages.postPeli)
