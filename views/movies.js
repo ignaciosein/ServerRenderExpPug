@@ -1,8 +1,10 @@
 const fetch = require('node-fetch');
-const APIKey = "473627c5"
+ 
+const APIKEY = process.env.API_KEY;
+
 const movies = {
     getMovies: async (url) => {
-        let response = await fetch(`http://www.omdbapi.com/?apikey=${APIKey}&`);
+        let response = await fetch(`http://www.omdbapi.com/?apikey=${APIKEY}&`);
         let prod = await response.json();
  
         console.log(prod);
