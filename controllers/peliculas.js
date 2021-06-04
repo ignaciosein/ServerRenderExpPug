@@ -1,9 +1,10 @@
 const pelis = require('../utils/pelis');
+const apiKey = process.env.API_KEY;
 
 const peliculas = {
     getPeli: async (req, res) => {
         let tituloDePelicula = req.params.title;
-        let data = await pelis.getMovie(`http://www.omdbapi.com/?t=${tituloDePelicula}&apikey=d33a722d`);
+        let data = await pelis.getMovie(`http://www.omdbapi.com/?t=${tituloDePelicula}&apikey=${apiKey}`);
         res.status(200).json(data);
     },
     
