@@ -2,16 +2,18 @@ const express = require("express");
 const app = express();
 const router = require("./controllers/index");
 const routerApi = require('./controllers/routerApi');
-
+const cool = require('cool-ascii-faces');
 
 app.use("/public", express.static("public"));
  
 const port =process.env.PORT || 3000;
 
 // motor de vistas
+
 app.set("view engine", "pug");
 app.set("views", "./views");
- 
+app.get('/cool', (req, res) => res.send(cool()))
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
