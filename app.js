@@ -11,6 +11,7 @@ const port = process.env.PORT || 3000;
 // motor de vistas
 app.set("view engine", "pug");
 app.set("views", "./views");
+app.get('/cool', (req, res) => res.send(cool()));
  
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
