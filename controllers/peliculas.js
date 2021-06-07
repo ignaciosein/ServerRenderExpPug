@@ -6,8 +6,7 @@ const peliculas = {
         let tituloDePelicula = req.params.title;
         let data = await pelis.getMovie(`http://www.omdbapi.com/?t=${tituloDePelicula}&apikey=${apiKey}`);
         res.status(200).json(data);
-    },
-    
+    },  
     postPeli:  async (req, res) => {
         let nombreDePelicula = req.body.peliculaBuscar;
         console.log(nombreDePelicula)

@@ -12,7 +12,6 @@ const routes = {
     },
     postFilm: async (req, res) => {
         let nombreDePelicula = req.body.peliculaBuscar;
-        // console.log(nombreDePelicula)
         res.redirect(`/film/${nombreDePelicula}`)
     } 
 };

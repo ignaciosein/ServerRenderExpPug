@@ -1,7 +1,6 @@
 const apiKey = process.env.API_KEY;
 
 document.getElementById("searchFilm").addEventListener("submit", function(event){
-
     event.preventDefault()
 
     let nameFilm = document.getElementById("filmName").value

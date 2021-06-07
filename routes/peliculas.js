@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const peliculas = require('./peliculas');
+const peliculas = require('../controllers/peliculas');
 
 router.get('/film/:title', peliculas.getPeli)
 router.post('/film/', peliculas.postPeli)
